@@ -1,0 +1,138 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+
+<body>
+
+    <h1>Registration Form</h1>
+
+    <form>
+
+        <!-- Text Input -->
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" placeholder="Enter your name" required>
+        <br><br>
+
+        <!-- Email -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        <br><br>
+
+        <!-- Password -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <br><br>
+
+        <!-- Confirm Password -->
+        <label for="confirm-password">Confirm Password:</label>
+        <input type="password" id="confirm-password" name="confirm-password" required>
+        <br><br>
+
+        <!-- Phone -->
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter phone number">
+        <br><br>
+
+        <!-- Date -->
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob">
+        <br><br>
+
+        <!-- Number -->
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="18" max="100">
+        <br><br>
+
+        <!-- Radio Buttons -->
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Other</label>
+        <br><br>
+
+        <!-- Dropdown -->
+        <label for="country">Country:</label>
+        <select id="country" name="country">
+            <option value="">Select Country</option>
+            <option value="india">India</option>
+            <option value="usa">USA</option>
+            <option value="uk">UK</option>
+            <option value="canada">Canada</option>
+        </select>
+        <br><br>
+
+        <!-- Checkboxes -->
+        <label>Skills:</label>
+        <br>
+
+        <input type="checkbox" id="html" name="skills" value="html">
+        <label for="html">HTML</label>
+
+        <input type="checkbox" id="css" name="skills" value="css">
+        <label for="css">CSS</label>
+
+        <input type="checkbox" id="javascript" name="skills" value="javascript">
+        <label for="javascript">JavaScript</label>
+
+        <input type="checkbox" id="git" name="skills" value="git">
+        <label for="git">Git</label>
+        <br><br>
+
+        <!-- File Upload -->
+        <label for="resume">Upload Resume:</label>
+        <input type="file" id="resume" name="resume">
+        <br><br>
+
+        <!-- URL -->
+        <label for="website">Website:</label>
+        <input type="url" id="website" name="website" placeholder="https://example.com">
+        <br><br>
+
+        <!-- Color -->
+        <label for="color">Favorite Color:</label>
+        <input type="color" id="color" name="color">
+        <br><br>
+
+        <!-- Range -->
+        <label for="experience">Experience Level:</label>
+        <input type="range" id="experience" name="experience" min="0" max="10">
+        <br><br>
+
+        <!-- Time -->
+        <label for="time">Preferred Interview Time:</label>
+        <input type="time" id="time" name="time">
+        <br><br>
+
+        <!-- Textarea -->
+        <label for="address">Address:</label>
+        <br>
+        <textarea id="address" name="address" rows="4" cols="40"
+                  placeholder="Enter your address"></textarea>
+        <br><br>
+
+        <!-- Hidden Input -->
+        <input type="hidden" name="form-type" value="registration">
+
+        <!-- Terms -->
+        <input type="checkbox" id="terms" name="terms" required>
+        <label for="terms">I agree to the terms and conditions</label>
+        <br><br>
+
+        <!-- Buttons -->
+        <input type="submit" value="Register">
+        <input type="reset" value="Reset">
+
+    </form>
+
+</body>
+</html>
